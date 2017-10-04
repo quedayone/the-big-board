@@ -1,0 +1,41 @@
+body{
+	/*color: black;*/
+	width:98%;
+	height: 98%;
+	background: white; 
+	font-size: 16px;
+}
+
+.theBigBoard div {
+	/*background: gray;*/
+	border-radius: 10px;
+	padding:10px;
+	/*width:1980px;*/
+	height: 1000px;
+}
+
+.theBigBoard {
+	padding:5px;
+	display: grid;
+	grid-template-columns: 1530px 350px;
+	grid-gap: 10px;
+	grid-template-areas: 
+	"content sidebar"
+}
+.content {
+	grid-area: content;
+	/*padding: 20px;*/
+	background: white;
+
+}
+
+.sidebar {
+	grid-area: sidebar;
+	/*background: gray;*/
+	height: 800px;
+}
+}
+#spnSeconds {
+    /*font-size:16pt;*/
+    /*color:Red;*/
+}

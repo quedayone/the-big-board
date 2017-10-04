@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>full calendar</title>
+    <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
+    <script src='fullcalendar/lib/jquery.min.js'></script>
+    <script src='fullcalendar/lib/moment.min.js'></script>
+    <script src='fullcalendar/fullcalendar.js'></script>
+    <script type='text/javascript' src='fullcalendar/gcal.js'></script>
+    <script type='text/javascript'>
+    $(document).ready(function() {
+        $('#calendar').fullCalendar({
+            height: 950,
+            timezone: 'local',
+            googleCalendarApiKey: 'AIzaSyDhH8Qe1bKd0fZd6dIxfPms61-IEzvuC-c',
+            eventSources: [{
+                    googleCalendarId: 'p1g08tlh2995jp6lempvk0hqjjluruvg@import.calendar.google.com',
+
+                    color: 'red', // an option!
+                    // textColor: 'black', // an option!
+                },
+                {
+                    googleCalendarId: 'tn586q4dn1n7lbpq3d7l2001prslur5r@import.calendar.google.com',
+                    className: 'JP Fall Soccer',
+                    color: 'Blue',
+                },
+                {
+                    googleCalendarId: 'jeffersonbandsmn@gmail.com',
+                    className: 'Jefferson Bands',
+                    color: 'gray',
+                },
+
+                // {
+                //     googleCalendarId: 'nhl_30_%4dinnesota+%57ild#sports@group.v.calendar.google.com',
+                //     className: 'MN WILD'
+                // }
+
+            ]
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div id='calendar'></div>
+</body>
+
+</html>

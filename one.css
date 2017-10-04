@@ -1,0 +1,42 @@
+body{
+	color: white;
+	width:98%;
+	height: 98%;
+	background: black; 
+	font-size: 16px;
+}
+
+.theBigBoard div {
+	/*background: gray;*/
+	border-radius: 10px;
+	padding:10px;
+	/*width:1980px;*/
+	height: 1000px;
+}
+
+.theBigBoard {
+	padding:5px;
+	display: grid;
+	grid-template-columns: 305px 1575px;
+	grid-gap: 10px;
+	grid-template-areas: 
+	"sidebar content"
+}
+.content {
+	grid-area: content;
+	/*padding: 20px;*/
+	background: gray;
+
+}
+
+.sidebar {
+	grid-area: sidebar;
+	background: gray;
+	height: 500px;
+	/*overflow:hidden;*/
+
+}
+#spnSeconds {
+    /*font-size:16pt;*/
+    /*color:Red;*/
+}
